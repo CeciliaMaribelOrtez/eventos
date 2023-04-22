@@ -15,8 +15,9 @@ export default defineConfig({
         detalles: resolve(__dirname, 'detalles.html'),
         informacion: resolve(__dirname, 'informacion.html'),
         locations: resolve(__dirname, 'locations.html'),
-        timeline: resolve(__dirname, 'timeline.html')
-      
+        timeline: resolve(__dirname, 'timeline.html'),
+        perfil: resolve(__dirname, 'perfil.html')
+ 
       }
     }
   },
