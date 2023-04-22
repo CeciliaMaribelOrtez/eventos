@@ -3,15 +3,13 @@
 @tailwind utilities;
 
 body {
-    @apply text-white p-0 m-0;
+    @apply text-gray-800 p-0 m-0 mb-16;
 }
 
 header {
     @apply bg-gray-800;
 }
-body {
-    @apply bg-gray-900;
-}
+
 .fila-1 {
     @apply grid grid-cols-6 justify-items-stretch gap-4 text-center leading-10 mb-4 mx-auto max-w-lg px-10;
   }
