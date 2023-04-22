@@ -13,6 +13,10 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, 'index.html'),
         detalles: resolve(__dirname, 'detalles.html')
+        detalles_informacion: resolve(__dirname, 'detalles_informacion.html')
+        locations: resolve(__dirname, 'locations.html')
+        timeline: resolve(__dirname, 'timeline.html')
+      
       }
     }
   },
