@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservacion</title>
+  <link rel="stylesheet" href="./src/css/style.css">
+</head>
+<center><b style="color: black;font-family: 'Times New Roman', Times, serif;">Seleccione sus lugares</b></center>
+<br>
+<body class="bg-white text-black mb-48"></body>
+<!-- Encabezado de la aplicaciòn -->
+
+<!-- Para no llenar de código repetitivo se crean las clases en el archivo style.css -->
+<!-- Se definen la clase fila, asiento, seleccionado y reservado -->
+<!-- Crear un contenedor para guardar las filas -->
+<main>
+  <div class="mx-auto">
+    <!-- Crear la primera fila -->
+    <div class="fila-1">
+      <div class="asiento">1A</div>
+      <div class="asiento reservado">2A</div>
+      <div class="asiento reservado">3A</div>
+      <div class="asiento">4A</div>
+      <div class="asiento">5A</div>
+      <div class="asiento">6A</div>
+    </div>
+
+    <!-- Segunda fila -->
+    <div class="fila">
+      <div class="asiento">1B</div>
+      <div class="asiento seleccionado">2B</div>
+      <div class="asiento seleccionado">3B</div>
+      <div class="asiento seleccionado">4B</div>
+      <div class="asiento">5B</div>
+      <div class="asiento">6B</div>
+      <div class="asiento">7B</div>
+    </div>
+
+    <!-- Tercera fila -->
+    <div class="fila">
+      <div class="asiento">1C</div>
+      <div class="asiento reservado">2C</div>
+      <div class="asiento">3C</div>
+      <div class="asiento">4C</div>
+      <div class="asiento">5C</div>
+      <div class="asiento">6C</div>
+      <div class="asiento">7C</div>
+    </div>
+    <!-- Cuarta fila -->
+    <div class="fila">
+      <div class="asiento">1D</div>
+      <div class="asiento">2D</div>
+      <div class="asiento">3D</div>
+      <div class="asiento">4D</div>
+      <div class="asiento reservado">5D</div>
+      <div class="asiento reservado">6D</div>
+      <div class="asiento">7D</div>
+    </div>
+
+    <!-- Quinta fila -->
+    <div class="fila">
+      <div class="asiento">1E</div>
+      <div class="asiento">2E</div>
+      <div class="asiento">3E</div>
+      <div class="asiento reservado">4E</div>
+      <div class="asiento">5E</div>
+      <div class="asiento">6E</div>
+      <div class="asiento">7E</div>
+    </div>
+
+    <!-- Sexta fila -->
+    <div class="fila">
+      <div class="asiento reservado">1F</div>
+      <div class="asiento">2F</div>
+      <div class="asiento">3F</div>
+      <div class="asiento reservado">4F</div>
+      <div class="asiento">5F</div>
+      <div class="asiento">6F</div>
+      <div class="asiento">7F</div>
+    </div>
+    <!-- Séptima fila-->
+    <div class="fila">
+      <div class="asiento">1G</div>
+      <div class="asiento">2G</div>
+      <div class="asiento">3G</div>
+      <div class="asiento">4G</div>
+      <div class="asiento">5G</div>
+      <div class="asiento">6G</div>
+      <div class="asiento reservado">7G</div>
+    </div>
+  </div>
+</main>
+<!-- indicadores -->
+<main class="flex flex-col items-center justify-center w-full h-full p-4">
+  <div class="flex items-center justify-center gap-10">
+    <span class="flex items-center text-sm font-normal text-gray-800 dark:text-white">
+      <span class="flex w-5 h-2 bg-red-600 square-full mr-3 flex-shrink-0"></span>Seleccionado</span>
+    <span class="flex items-center text-sm font-normal text-gray-800 dark:text-white">
+      <span class="flex w-5 h-2 bg-blue-500 square-full mr-3 flex-shrink-0"></span>Reservado</span>
+    <span class="flex items-center text-sm font-normal text-gray-800 dark:text-white">
+      <span class="flex w-5 h-2.5 bg-gray-300 square-full mr-3 flex-shrink-0"></span>Disponible</span>
+  </div>
+</main>
+<!-- contenido-->
+<div class="mx-96 justify-center gap-10">
+  <h1><b>Detalles del evento</b></h1>
+  <div class="parrafos flex items-center justify-between">
+  <h2>Concierto</h2>
+    <h2>New York-USA</h2>
+    <h2>Cras Building</h2>
+  </div>
+  <p>Después de su carrera en los estadios de América Latina, MANÁ se embarcará en la etapa 2023 de su gira,
+    México Lindo Querido, ¡con 2 noches en el United Center el 28 y 29 de aSu gira es una celebración atemporal
+    del amor y la admiración del grupo por México y la comunidad latina multigeneracional en su conjunto.
+    Durante tres décadas, MANÁ ha acumulado una audiencia diversa de fanáticos de todas las edades que continúan
+    celebrando su música en todo el mundo “Prepárense,venimos con una nueva producción y todos nuestros éxitos. </p>
+</div>
+<main class="flex flex-col items-center justify-center w-full h-full p-4">
+  <div class="mx-auto">
+    <button class="bg-red-500 hover:bg-red-400 text-white font-bold py-2 px-20 square-full">
+      <a>Comprar boletos</a>
+  </div>
+</main>
+</body>
+<div id="barra"></div>
+  <script type="module" src="./src/js/main.js"></script>
+</html>

@@ -3,9 +3,194 @@
 @tailwind utilities;
 
 body {
-    @apply text-gray-300 p-0 m-0;
+    @apply text-white p-0 m-0;
 }
 
 header {
     @apply bg-gray-800;
 }
+body {
+    @apply bg-gray-900;
+}
+.fila-1 {
+    @apply grid grid-cols-6 justify-items-stretch gap-4 text-center leading-10 mb-4 mx-auto max-w-lg px-10;
+  }
+  .fila {
+    @apply grid grid-cols-7 gap-4 text-center leading-10 mb-4 mx-auto max-w-lg;
+  }
+  
+  .asiento {
+    @apply cursor-pointer w-10 h-10 bg-gray-200 rounded-md;
+  }
+  
+  .reservado {
+    @apply w-10 h-10 bg-blue-500 text-white;
+  }
+  
+  .seleccionado {
+    @apply w-10 h-10 bg-red-500 text-white;}
+    
+    .parrafos {
+        display: flex;
+        margin: 15px;
+      
+
+    }
+    
+  .heade {
+    @apply grid grid-cols-1 text-left leading-3 mt-8 mx-auto max-w-lg;
+}
+
+.lineas {
+    @apply grid grid-cols-2 text-left mt-4 mx-auto max-w-lg;
+}
+
+.lineaT{
+    @apply grid grid-cols-1 ;
+}
+
+.fechas {
+    @apply cursor-pointer w-16 h-16 bg-gray-50 text-gray-600 rounded-md;
+}
+
+.fechasI {
+    @apply text-center leading-5 mt-3 mx-auto max-w-lg;
+}
+
+.lineaC {
+   margin: 10px; 
+   position: relative;
+   
+}
+
+.presentaciones {
+    @apply mb-8 cursor-pointer w-96 h-48 bg-gray-400 text-gray-500 rounded-md -ml-32;
+}
+
+.pre1 {
+    @apply grid grid-cols-1 text-left ml-4 mx-auto max-w-lg;
+}
+
+.pre1-1 {
+    @apply grid grid-cols-2 mt-7 text-left; 
+}
+ .alinear{
+  width: 500px;
+  height: 500px;
+ }
+ 
+/* Informacion */
+
+.imgR {
+  @apply grid grid-cols-1 leading-6 mb-4;
+  position: absolute;
+  display: inline-block;
+  text-align: center;
+}
+
+.pieI {
+  text-align: left;
+  font-size: 20px;
+  font-style: italic;
+  position: absolute;
+  bottom: 710px;
+  left: 30px;
+}
+
+.mainInfo {
+  font-size: 17px;
+  position:  relative;
+  bottom: 50px;
+  color: rgb(107 114 128);
+  border: rgb(236, 233, 233) 3px solid;
+  border-radius: 60px;
+  border-width: 10px 0px 100px;
+  padding: 10px;
+  background-color: rgb(236, 233, 233);
+}
+
+.org {
+  @apply grid grid-cols-3 leading-6 mt-4 mx-auto max-w-lg;
+}
+
+.org1 {
+  @apply w-10 h-10 text-gray-500 rounded-md;
+  background-color: rgb(192, 192, 192)
+}
+
+.lug {
+  
+}
+
+.org2 {
+  @apply grid grid-cols-1 leading-6 -ml-72 -my-2;
+}
+
+.btnS {
+  @apply grid grid-cols-1 text-center leading-3 mx-auto max-w-fit;
+  background-color: rgb(255, 0, 51);
+  color: white;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.opciones {
+  @apply grid grid-cols-5 text-center leading-3 mt-10 mx-auto max-w-xl;
+  font-style: italic;
+}
+
+.opc:hover {
+  color: rgb(255, 0, 51);
+}
+
+.infoD {
+  @apply grid grid-cols-1 text-center leading-3 mt-10 mx-auto max-w-lg;
+}
+
+.icons {
+  @apply text-left ml-10 my-6 -mt-4;
+}
+
+.infor {
+  @apply grid grid-cols-1 text-left leading-6 mt-5 mx-auto max-w-lg;
+}
+
+
+/* Timeline */
+
+.headT {
+  @apply grid grid-cols-1 text-left leading-3 mt-8 mx-auto max-w-lg;
+}
+
+.lineas {
+  @apply grid grid-cols-2 text-left mt-4 mx-auto max-w-lg;
+}
+
+.lineaT{
+  @apply grid grid-cols-1;
+}
+
+.fechas {
+  @apply cursor-pointer w-16 h-16 bg-gray-50 text-gray-600 rounded-md;
+}
+
+.fechasI {
+  @apply text-center leading-5 mt-3 mx-auto max-w-lg;
+}
+
+.lineaC {
+  
+}
+
+.presentaciones {
+  @apply mb-8 cursor-pointer w-96 h-48 bg-gray-400 text-gray-500 rounded-md -ml-32;
+}
+
+.pre1 {
+  @apply grid grid-cols-1 text-left ml-4 mx-auto max-w-lg;
+}
+
+.pre1-1 {
+  @apply grid grid-cols-2 mt-7 text-left; 
+}
+   

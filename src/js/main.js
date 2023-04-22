@@ -12,3 +12,4 @@ import './slider'
 
 //cargar el encabezado del header
 import './header'
+
