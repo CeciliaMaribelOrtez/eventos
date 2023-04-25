@@ -3,80 +3,83 @@
 @tailwind utilities;
 
 body {
-    @apply text-gray-800 p-0 m-0 mb-16;
+  @apply text-gray-800 p-0 m-0 mb-24 max-w-3xl mx-auto;
 }
 
 header {
-    @apply bg-gray-800;
+  @apply bg-gray-800;
 }
 
 .fila-1 {
-    @apply grid grid-cols-6 justify-items-stretch gap-4 text-center leading-10 mb-4 mx-auto max-w-lg px-10;
-  }
-  .fila {
-    @apply grid grid-cols-7 gap-4 text-center leading-10 mb-4 mx-auto max-w-lg;
-  }
-  
-  .asiento {
-    @apply cursor-pointer w-10 h-10 bg-gray-200 rounded-md;
-  }
-  
-  .reservado {
-    @apply w-10 h-10 bg-blue-500 text-white;
-  }
-  
-  .seleccionado {
-    @apply w-10 h-10 bg-red-500 text-white;}
-    
-    .parrafos {
-        display: flex;
-        margin: 15px;
-      
+  @apply grid grid-cols-6 justify-items-stretch gap-4 text-center leading-10 mb-4 mx-auto max-w-lg px-10;
+}
 
-    }
-    
-  .heade {
-    @apply grid grid-cols-1 text-left leading-3 mt-8 mx-auto max-w-lg;
+.fila {
+  @apply grid grid-cols-7 gap-4 text-center leading-10 mb-4 mx-auto max-w-lg;
+}
+
+.asiento {
+  @apply cursor-pointer w-10 h-10 bg-gray-200 rounded-md;
+}
+
+.reservado {
+  @apply w-10 h-10 bg-blue-500 text-white;
+}
+
+.seleccionado {
+  @apply w-10 h-10 bg-red-500 text-white;
+}
+
+.parrafos {
+  display: flex;
+  margin: 15px;
+
+
+}
+
+.heade {
+  @apply grid grid-cols-1 text-left leading-3 mt-8 mx-auto max-w-lg;
 }
 
 .lineas {
-    @apply grid grid-cols-2 text-left mt-4 mx-auto max-w-lg;
+  @apply grid grid-cols-2 text-left mt-4 mx-auto max-w-lg;
 }
 
-.lineaT{
-    @apply grid grid-cols-1 ;
+.lineaT {
+  @apply grid grid-cols-1;
 }
 
 .fechas {
-    @apply cursor-pointer w-16 h-16 bg-gray-50 text-gray-600 rounded-md;
+  @apply cursor-pointer w-16 h-16 bg-gray-50 text-gray-600 rounded-md;
 }
 
 .fechasI {
-    @apply text-center leading-5 mt-3 mx-auto max-w-lg;
+  @apply text-center leading-5 mt-3 mx-auto max-w-lg;
 }
 
 .lineaC {
-   margin: 10px; 
-   position: relative;
-   
+  margin: 10px;
+  position: relative;
+
 }
 
 .presentaciones {
-    @apply mb-8 cursor-pointer w-96 h-48 bg-gray-400 text-gray-500 rounded-md -ml-32;
+  @apply mb-8 cursor-pointer w-96 h-48 bg-gray-400 text-gray-500 rounded-md -ml-32;
 }
 
 .pre1 {
-    @apply grid grid-cols-1 text-left ml-4 mx-auto max-w-lg;
+  @apply grid grid-cols-1 text-left ml-4 mx-auto max-w-lg;
 }
 
 .pre1-1 {
-    @apply grid grid-cols-2 mt-7 text-left; 
+  @apply grid grid-cols-2 mt-7 text-left;
 }
- .alinear{
+
+.alinear {
   width: 500px;
   height: 500px;
- }
- 
+}
+
 /* Informacion */
 
 .imgR {
@@ -97,7 +100,7 @@ header {
 
 .mainInfo {
   font-size: 17px;
-  position:  relative;
+  position: relative;
   bottom: 50px;
   color: rgb(107 114 128);
   border: rgb(236, 233, 233) 3px solid;
@@ -116,9 +119,7 @@ header {
   background-color: rgb(192, 192, 192)
 }
 
-.lug {
-  
-}
+.lug {}
 
 .org2 {
   @apply grid grid-cols-1 leading-6 -ml-72 -my-2;
@@ -164,7 +165,7 @@ header {
   @apply grid grid-cols-2 text-left mt-4 mx-auto max-w-lg;
 }
 
-.lineaT{
+.lineaT {
   @apply grid grid-cols-1;
 }
 
@@ -176,9 +177,7 @@ header {
   @apply text-center leading-5 mt-3 mx-auto max-w-lg;
 }
 
-.lineaC {
-  
-}
+.lineaC {}
 
 .presentaciones {
   @apply mb-8 cursor-pointer w-96 h-48 bg-gray-400 text-gray-500 rounded-md -ml-32;
@@ -189,6 +188,5 @@ header {
 }
 
 .pre1-1 {
-  @apply grid grid-cols-2 mt-7 text-left; 
+  @apply grid grid-cols-2 mt-7 text-left;
 }
-   
