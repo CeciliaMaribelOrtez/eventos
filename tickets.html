@@ -5,8 +5,138 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ticket</title>
+    <link rel="stylesheet" href="./src/css/style.css">
 </head>
-<body>
+<body class="bg-grey-800">
+    
+    <div class="flex items-center justify-between p-2">
+        <div>
+          <!-- Icono de menú -->
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
+          </svg>
+        </div>
 
+        <p>Tickets comprados</p>
+
+        <!-- Icono de barra vertical -->
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 tranform rotate-90">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z"></path>
+          </svg>
+        </div>
+      </div>
+      <ul class="mt-4 mb-4 flex flex-wrap text-sm font-medium text-center text-gray-500 dark:text-gray-400" data-tabs-toggle="#contenido" role="tablist">
+        <li class="mr-2" role="presentation">
+          <button id="todos" type="button" role="tab" aria-controls="todos" aria-selected="true" href="#" aria-current="page" class="inline-block py-2 px-4 rounded-lg active dark:bg-gray-800 dark:text-blue-500 bg-red-500 text-white hover:text-gray-200 dark:hover:text-blue-400 border-blue-600 dark:border-blue-500">
+            Todos
+          </button>
+        </li>
+        <li class="mr-2" role="presentation">
+          <button id="pendientes" type="button" role="tab" aria-controls="pendientes" aria-selected="false" class="inline-block py-2 px-4 rounded-lg hover:text-gray-600 hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-gray-300 text-gray-500 dark:text-gray-400 border-gray-100 hover:border-gray-300 dark:border-gray-700 dark:border-transparent">
+            Pendientes
+          </button>
+        </li>
+        <li class="mr-2" role="presentation">
+          <button id="anteriores" type="button" role="tab" aria-controls="anteriores" aria-selected="false" class="inline-block py-2 px-4 rounded-lg hover:text-gray-600 hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-gray-300 text-gray-500 dark:text-gray-400 border-gray-100 hover:border-gray-300 dark:border-gray-700">
+            Anteriores
+          </button>
+        </li>
+      </ul>
+      <div>
+        <div class="rounded-lg" id="todos-content" role="tabpanel" aria-labelledby="todos-tab">
+        <div class="flex justify-between mb-2 bg-gray-50 rounded-lg items-center gap-4 py-3 px-2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6  stroke-green-500 stroke-2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                <p class="flex-1 line-through">Ricardo Arjona</p>
+
+                <p>18-marzo</p>
+            </div>
+        <div class="flex justify-between mb-2 bg-gray-50 rounded-lg items-center gap-4 py-3 px-2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 stroke-orange-500 stroke-2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                    
+                <p class="flex-1 ">Ricardo Arjona</p>
+
+                <p>18-marzo</p>
+            </div>
+        <div class="flex justify-between mb-2 bg-gray-50 rounded-lg items-center gap-4 py-3 px-2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 stroke-orange-500 stroke-2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                    
+                <p class="flex-1 ">Fernando Olvera(mana)</p>
+                <p>05-febrero</p>
+            </div>
+        <div class="flex justify-between mb-2 bg-gray-50 rounded-lg items-center gap-4 py-3 px-2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 stroke-orange-500 stroke-2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                    
+                <p class="flex-1 ">Fernando Olvera(mana)</p>
+
+                <p>05-febrero</p>
+            </div>
+        <div class="flex justify-between mb-2 bg-gray-50 rounded-lg items-center gap-4 py-3 px-2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6  stroke-green-500 stroke-2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                <p class="flex-1 line-through">Jesus Adrian Romero</p>
+
+                <p>10-mayo</p>
+            </div>
+        <div class="flex justify-between mb-2 bg-gray-50 rounded-lg items-center gap-4 py-3 px-2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6  stroke-green-500 stroke-2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                <p class="flex-1 line-through">Jesus Adrian Romero</p>
+
+                <p>10-mayo</p>
+            </div>
+        <div class="flex justify-between mb-2 bg-gray-50 rounded-lg items-center gap-4 py-3 px-2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 stroke-orange-500 stroke-2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                    
+                <p class="flex-1 ">Banda MS</p>
+
+                <p>05-junio</p>
+            </div>
+        <div class="flex justify-between mb-2 bg-gray-50 rounded-lg items-center gap-4 py-3 px-2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6  stroke-green-500 stroke-2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                <p class="flex-1 line-through">Banda MS</p>
+
+                <p>05-Junio</p>
+            </div>
+        <div class="flex justify-between mb-2 bg-gray-50 rounded-lg items-center gap-4 py-3 px-2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6  stroke-green-500 stroke-2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                <p class="flex-1 line-through">Christine D'Clario</p>
+
+                <p>20-Noviembre</p>
+            </div>
+        <div class="flex justify-between mb-2 bg-gray-50 rounded-lg items-center gap-4 py-3 px-2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6  stroke-green-500 stroke-2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                <p class="flex-1 line-through">Christine D'Clario</p>
+
+                <p>20-Noviembre</p>
+            </div></div>
+      <button class="mt-4 w-full rounded-lg bg-red-500 text-white px-2 py-4 flex justify-center">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"></path>
+          </svg>
+    
+        Comprar boletos
+      </button>
+<div id="barra"></div>
+    
+<script src="./src/js/main.js" type="module"></script>
 </body>
 </html>
